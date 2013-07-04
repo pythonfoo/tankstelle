@@ -11,7 +11,7 @@ class Strategie:
     def value(self, runde):
         """Der Wert, den wir in Runde n als Preis nutzen."""
         return 0
-
+        
     def otherValue(self, runde, value):
         """Der Wert, den der Gegner in der aktuellen Runde gewählt hat."""
 

@@ -19,10 +19,10 @@ def tankstellenArena(strategien):
             wins[strategieA] += winA
             wins[strategieB] += winB
 
-    rangfolge = sorted(wins, key=lambda k: wins[k])
+    rangfolge = sorted(wins, key=lambda k: wins[k], reverse=True)
     print "Endstand:"
     for strategie in rangfolge:
-        print "  %20s -> %8d   (von: %s)" % (strategie.name(), wins[strategie], strategie.author())
+        print "  %20s -> %10d   (von: %s)" % (strategie.name(), wins[strategie], strategie.author())
 
 
 def tankstellenSpiel(strategieA, strategieB):
