@@ -9,7 +9,10 @@ def strategieJohannes1(runde, letzterGegnerPreis):
     return 100
 
 def generatorA(runde, lastPrice):
-    return lastPrice - 10
+    if lastPrice > 10:
+        return lastPrice - 10
+    elif lastPrice <= 10:
+        return 1
 def generatorB(runde, lastPrice):
     if lastPrice >= 50:
         return random.choice(range(1,51))
@@ -85,7 +88,7 @@ def tankstellenRunde(strategieA, strategieB):
         return totalWin / 2, totalWin / 2
 
 def main():
-    tankstellenSpiel(generatorB, generatorC)
+    tankstellenSpiel(generatorA, generatorB)
     
     
 if __name__ == "__main__":
