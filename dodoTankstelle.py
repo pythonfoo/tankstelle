@@ -33,7 +33,7 @@ class DodoB(Strategie):
         """Der Wert, den wir in Runde n als Preis nutzen."""
         if self.lastValue >= 50:
             return random.choice(range(1,51))
-        if self.lastValue >= 25 and lastPrice < 50:
+        if self.lastValue >= 25 and self.lastValue < 50:
             return random.choice(range(1,26))
         if self.lastValue < 25:
             return random.choice(range(1,13))
