@@ -8,9 +8,12 @@ Beispiele sind in nash.py zu finden.
 
 class Strategie:
     
-    def value(self, n):
+    def value(self, runde):
         """Der Wert, den wir in Runde n als Preis nutzen."""
         return 0
+
+    def otherValue(self, runde, value):
+        """Der Wert, den der Gegner in der aktuellen Runde gewählt hat."""
 
     def author(self):
         """Der Name des Autors (für die Ausgabe)."""

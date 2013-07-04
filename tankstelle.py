@@ -47,6 +47,9 @@ def tankstellenSpiel(strategieA, strategieB):
         priceA = strategieA.value(runde)
         priceB = strategieB.value(runde)
         
+        strategieA.otherValue(runde, priceB)
+        strategieB.otherValue(runde, priceA)
+        
         roundWinA, roundWinB = tankstellenRunde(priceA, priceB)
         
         winA, winB = winA + roundWinA, winB + roundWinB
