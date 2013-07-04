@@ -8,6 +8,8 @@ am unteren Ende) hinzugefügt werden.
 """
 
 import nash
+import dodoTankstelle
 
-allStrategies = [nash.NashLow(), nash.NashHigh()]
+
+allStrategies = [nash.NashLow(), nash.NashHigh(), dodoTankstelle.DodoA(), dodoTankstelle.DodoB(), dodoTankstelle.DodoC()]
 
