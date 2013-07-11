@@ -20,9 +20,15 @@ def tankstellenArena(strategien):
             wins[strategieB] += winB
 
     rangfolge = sorted(wins, key=lambda k: wins[k], reverse=True)
+    maximal_win = float(RUNDEN * KUNDEN * 100 * (len(strategien) - 1))
+    # warum ist maximal_win diese Anzahl?
+    #   RUNDEN ist die Anzahl der Runden
+    #   KUNDEN * 100 ist die maximal Einnahme pro gespielter Runde
+    #   jede Strategie spielt gegen jede andere, also gegen len(strategien) - 1
+    print "maximal_win", maximal_win
     print "Endstand:"
     for strategie in rangfolge:
-        print "  %20s -> %10d   (von: %s)" % (strategie.name(), wins[strategie], strategie.author())
+        print "  %20s -> %10d (%2.1f)   (von: %s)" % (strategie.name(), wins[strategie], wins[strategie] / maximal_win * 100, strategie.author())
 
 
 def tankstellenSpiel(strategieA, strategieB):
