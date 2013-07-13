@@ -6,6 +6,7 @@ Zwei Tankstellen an einer stark befahrenen Straße konkurrieren um die Kunden. J
 
 Jeder Tankstellenbetreiber möchte nun natürlich so viel Gewinn wie möglich machen. Aber welchen Preis sollte er dazu wählen?
 
+Das Tankstellen Dilemma ist deshalb ein Dilemma, weil jeder der beiden Tankstellenbetreiber nicht weiß welchen Preis der jeweils andere an diesen Tag festlegen wird. Er kann zwar sichergehen zumindestens nie zu verlieren, indem er durchgehend den niedrigsten Preis (1ct) benutzt, doch so macht er sehr wenig Gewinn. Was im Widerspruch zum Ziel des Maximalen Gewinns steht. Außerdem weiß er nur die Preise vom letzten Tag und hat keine Möglichkeit herrauszufinden, welchen Preis sein Konkurent benutzen wird. Das Tankstellen Dilemma ist eine Abwandlung des Gefangenen Dilemmas, welches von John F. Nash aufgestellt wurde. Bei einen unkooperativen Verhalten der Kontrahenten wird sich früher ein Nash Gleichgewicht am niedrigsten Wert einpendeln.
 
 
 ## Ausführen ##
